@@ -26,6 +26,11 @@
   --error: #991b1b;
   --info: #0ea5e9;
 
+  /* Cycles */
+  --work-time: #065f46  ;
+  --short-break-time: #eab308  ;
+  --long-break-time: #0ea5e9 ;
+
   /* Texts Over */
   --text-over-primary: #0a0f1a;
   --text-over-primary-dark: #e6e9f0;

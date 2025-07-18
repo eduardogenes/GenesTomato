@@ -1,0 +1,7 @@
+.component {
+  font-size: clamp(10rem, 20vw, 12rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+  color: var(--text-default);
+}

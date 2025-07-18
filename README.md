@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# GenesTomato 🍅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um temporizador Pomodoro simples e moderno, construído para ajudar a manter o foco e aumentar a produtividade.
 
-Currently, two official plugins are available:
+![Preview do GenesTomato](https://via.placeholder.com/800x450.png?text=Preview+do+GenesTomato)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+* **Temporizador Pomodoro**: Ciclos de trabalho e descanso (pausa curta e longa) para manter a produtividade.
+* **Interface Limpa**: Um design minimalista para evitar distrações.
+* **Visualização de Ciclos**: Acompanhe em qual ciclo você está atualmente.
+* **Customizável**: (Futuramente) Permite ajustar a duração dos tempos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias Utilizadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O projeto foi construído utilizando as seguintes tecnologias:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* **[React](https://react.dev/)**: Biblioteca para construir a interface do usuário.
+* **[Vite](https://vitejs.dev/)**: Ferramenta de build para um desenvolvimento mais rápido.
+* **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+* **[Lucide React](https://lucide.dev/)**: Biblioteca de ícones open-source.
+* **CSS Modules**: Para estilização local e componentizada.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Como Executar o Projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Para rodar o GenesTomato na sua máquina local, siga os passos abaixo:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/eduardogenes/GenesTomato.git](https://github.com/eduardogenes/GenesTomato.git)
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd GenesTomato
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+Após executar os comandos, o projeto estará disponível em `http://localhost:5173` (ou na porta que o Vite indicar).
+
+### Scripts Disponíveis
+
+No `package.json`, você encontrará os seguintes scripts:
+
+* `npm run dev`: Inicia o servidor de desenvolvimento com Hot-Reload.
+* `npm run build`: Compila e otimiza a aplicação para produção.
+* `npm run lint`: Executa o ESLint para analisar o código em busca de erros e padrões.
+* `npm run preview`: Inicia um servidor local para visualizar a versão de produção.

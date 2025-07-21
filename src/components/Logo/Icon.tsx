@@ -1,0 +1,99 @@
+export function Icon() {
+  return (
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 64 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+          <feOffset dx="1" dy="2" result="offsetblur" />
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.3" />
+          </feComponentTransfer>
+          <feMerge>
+            <feMergeNode />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <g filter="url(#dropshadow)">
+        <path
+          d="M51.2,32.8C51.2,44.4,42.8,54.4,32,54.4S12.8,44.4,12.8,32.8C12.8,21.2,23.6,11.2,32,11.2S51.2,21.2,51.2,32.8Z"
+          fill="#E53E3E"
+        />
+        <path
+          d="M42,21 C45,24 47,29 47,34 C47,35.5 46.8,37 46.5,38.5 C42,42 37,44 32,44 C27,44 22,42 17.5,38.5 C17.2,37 17,35.5 17,34 C17,29 19,24 22,21 C25,18.5 28.5,17 32,17 C35.5,17 39,18.5 42,21Z"
+          fill="rgba(255, 255, 255, 0.2)"
+        />
+        <path
+          d="M32,15.2c-4.4,0-8-1.6-8-3.6s3.6-3.6,8-3.6s8,1.6,8,3.6S36.4,15.2,32,15.2Z"
+          fill="#38A169"
+        />
+        <rect x="30" y="4" width="4" height="4" rx="2" fill="#2F855A" />
+      </g>
+      <g>
+        <circle cx="32" cy="34" r="16" fill="#F7FAFC" />
+        <circle cx="32" cy="34" r="14" stroke="#A0AEC0" strokeWidth="2" />
+        <line
+          x1="32"
+          y1="22"
+          x2="32"
+          y2="24"
+          stroke="#2D3748"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="42"
+          y1="34"
+          x2="44"
+          y2="34"
+          stroke="#2D3748"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="32"
+          y1="46"
+          x2="32"
+          y2="44"
+          stroke="#2D3748"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="20"
+          y1="34"
+          x2="22"
+          y2="34"
+          stroke="#2D3748"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="32"
+          y1="34"
+          x2="38"
+          y2="34"
+          stroke="#718096"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="32"
+          y1="34"
+          x2="32"
+          y2="24"
+          stroke="#E53E3E"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        <circle cx="32" cy="34" r="2" fill="#E53E3E" stroke="#fff" strokeWidth="1" />
+      </g>
+    </svg>
+  );
+}

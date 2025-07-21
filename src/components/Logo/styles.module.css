@@ -1,3 +1,4 @@
+/* src/components/Logo/styles.module.css */
 .logo {
   color: var(--text-default);
   display: flex;
@@ -24,7 +25,8 @@
   filter: brightness(0.8);
 }
 
-.logoLink svg {
-  width: 6.4rem;
-  height: 6.4rem;
+
+.iconWrapper {
+  width: 7.4rem;
+  height: 7.4rem;
 }

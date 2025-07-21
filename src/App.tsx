@@ -4,10 +4,11 @@ import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 
 import './styles/global.css';
 import './styles/theme.css';
-import { PlayIcon } from 'lucide-react';
 
 export function App() {
   return (
@@ -45,9 +46,8 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <button type='submit' className='buttonForm'>
-              <PlayIcon />
-            </button>
+            <DefaultButton icon={<PlayCircleIcon />} state='start' />
+            <DefaultButton icon={<StopCircleIcon />} state='stop' />
           </div>
         </form>
       </Container>

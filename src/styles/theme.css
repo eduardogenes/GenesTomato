@@ -39,6 +39,7 @@
   --text-over-warning: #0a0f1a;
   --text-over-error: #e6e9f0;
   --text-over-info: #0a0f1a;
+  --text-over-stop: #e6e9f0;
 
   /* Texts Default */
   --text-default: #e6e9f0;
@@ -47,5 +48,9 @@
   /* Disabled */
   --disabled: #555f7d;
   --text-disabled: #aab3cc;
+
+  /* button */
+  --button-start: #065f46;
+  --button-stop: #991b1b;
 }
 
